@@ -12,15 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BocadilloAndroid"
         tools:targetApi="31">
+
+        <!-- MainActivity: La pantalla de inicio -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- DashBoardAlumno: La pantalla a la que navegas -->
+        <activity
+            android:name=".DashBoardAlumno"
+            android:exported="true" /> <!-- No necesita ser accesible desde otras apps -->
+
     </application>
 
 </manifest>

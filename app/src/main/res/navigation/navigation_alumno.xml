@@ -3,25 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_alumno"
-    app:startDestination="@id/pedidoFragment">
+    app:startDestination="@id/fragment_pedido">
 
     <fragment
-        android:id="@+id/pedidoFragment"
+        android:id="@+id/fragment_pedido"
         android:name="com.example.bocadilloandroid.PedidoFragment"
         android:label="fragment_pedido"
         tools:layout="@layout/fragment_pedido" />
     <fragment
-        android:id="@+id/calendarioFragment"
+        android:id="@+id/fragment_calendario"
         android:name="com.example.bocadilloandroid.CalendarioFragment"
         android:label="fragment_calendario"
         tools:layout="@layout/fragment_calendario" />
     <fragment
-        android:id="@+id/perfilFragment"
+        android:id="@+id/fragment_perfil"
         android:name="com.example.bocadilloandroid.PerfilFragment"
         android:label="fragment_perfil"
         tools:layout="@layout/fragment_perfil" />
     <fragment
-        android:id="@+id/historialFragment"
+        android:id="@+id/fragment_historial"
         android:name="com.example.bocadilloandroid.HistorialFragment"
         android:label="fragment_historial"
         tools:layout="@layout/fragment_historial" />

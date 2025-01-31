@@ -13,7 +13,7 @@
         android:title="Historial"/>
 
     <item
-        android:id="@+id/fragment_pedidos"
+        android:id="@+id/fragment_pedido"
         android:icon="@drawable/ic_pedido"
         android:title="Pedidos" />
 
