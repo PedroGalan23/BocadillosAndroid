@@ -28,7 +28,9 @@ class CalendarioFragment : Fragment() {
 
         recyclerView = view.findViewById(R.id.recyclerViewBocadillos)
         recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
-        bocadilloAdapter = BocadilloAdapter(getBocadillosSemana())
+        bocadilloAdapter = BocadilloAdapter(getBocadillosSemana()) { bocadillo ->
+            println("Bocata Seleccionado")
+        }
 
         recyclerView.adapter = bocadilloAdapter
 

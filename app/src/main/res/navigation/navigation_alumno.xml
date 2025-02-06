@@ -9,7 +9,15 @@
         android:id="@+id/fragment_pedido"
         android:name="com.example.bocadilloandroid.PedidoFragment"
         android:label="fragment_pedido"
-        tools:layout="@layout/fragment_pedido" />
+        tools:layout="@layout/fragment_pedido" >
+        <action
+            android:id="@+id/action_fragment_pedido_to_resumenFragment"
+            app:destination="@id/resumenFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
     <fragment
         android:id="@+id/fragment_calendario"
         android:name="com.example.bocadilloandroid.CalendarioFragment"
@@ -25,4 +33,18 @@
         android:name="com.example.bocadilloandroid.HistorialFragment"
         android:label="fragment_historial"
         tools:layout="@layout/fragment_historial" />
+    <fragment
+        android:id="@+id/resumenFragment"
+        android:name="com.example.bocadilloandroid.ui.ResumenFragment"
+        android:label="ResumenFragment" >
+        <action
+            android:id="@+id/action_resumenFragment_to_fragment_pedido"
+            app:destination="@id/fragment_pedido"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+
+
 </navigation>

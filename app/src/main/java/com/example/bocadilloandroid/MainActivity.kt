@@ -1,24 +1,28 @@
-package com.example.bocadilloandroid
+package com.example.bocadilloandroid.ui
 
 import android.content.Intent
-import android.graphics.DashPathEffect
 import android.os.Bundle
-import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.bocadilloandroid.DasBoardCocina
+import com.example.bocadilloandroid.DashBoardAdmin
+import com.example.bocadilloandroid.DashBoardAlumno
+import com.example.bocadilloandroid.R
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.login)
-        val btnIrAotraPantalla = findViewById<Button>(R.id.btnLogin)
+        val userRole = intent.getStringExtra("USER_ROLE") ?: "alumno"
 
-        btnIrAotraPantalla.setOnClickListener {
-            val intent = Intent(this, DashBoardAlumno::class.java)
-            startActivity(intent) // Iniciar la otra actividad
+        val intent = when (userRole.lowercase()) {
+            "alumno" -> Intent(this, DashBoardAlumno::class.java)
+            "cocina" -> Intent(this, DasBoardCocina::class.java)
+            "admin" -> Intent(this, DashBoardAdmin::class.java)
+            else -> Intent(this, DashBoardAlumno::class.java) // Default
         }
+
+        startActivity(intent)
+        finish() // Cierra MainActivity para que no pueda volver atrás
     }
 }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1055635876501",
+    "project_id": "bocadillo-de1b7",
+    "storage_bucket": "bocadillo-de1b7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055635876501:android:2577d55393c393761a099c",
+        "android_client_info": {
+          "package_name": "com.example.bocadilloandroid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDriVG8c1Qlr4_9Qw0OjC8LmDfqCd-Qcmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -15,7 +15,7 @@
 
         <!-- MainActivity: La pantalla de inicio -->
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +27,15 @@
         <activity
             android:name=".DashBoardAlumno"
             android:exported="true" /> <!-- No necesita ser accesible desde otras apps -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DasBoardCocina"
+            android:exported="true" />
+        <activity
+            android:name=".DashBoardAdmin"
+            android:exported="true" />
 
     </application>
 
